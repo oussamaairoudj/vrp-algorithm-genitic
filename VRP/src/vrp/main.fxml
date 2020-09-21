@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="520.0" prefWidth="639.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vrp.Controller">
+   <children>
+      <AnchorPane fx:id="title" onMouseDragged="#dragged" onMousePressed="#pressed" prefHeight="25.0" prefWidth="633.0">
+         <children>
+            <ImageView fitHeight="25.0" fitWidth="35.0" layoutX="602.0" layoutY="1.0" onMouseClicked="#exit" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../bin/icon/exit.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="25.0" fitWidth="35.0" layoutX="2.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../bin/icon/v.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="25.0" fitWidth="35.0" layoutX="20.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../bin/icon/r.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="38.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../bin/icon/p.png" />
+               </image>
+            </ImageView>
+            <Text fill="RED" layoutX="210.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Genetic - Algorithm" textAlignment="CENTER" />
+            <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="168.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../bin/icon/icon.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="455.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../bin/icon/icon.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+      <Pane fx:id="graph" layoutX="174.0" layoutY="42.0" prefHeight="399.0" prefWidth="459.0">
+         <children>
+            <Group fx:id="content" />
+            <ProgressIndicator fx:id="prograss" layoutX="396.0" layoutY="335.0" progress="0.0" visible="false" />
+            <Text fx:id="clock" fill="RED" layoutX="392.0" layoutY="17.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0:0:0" textAlignment="CENTER" visible="false" />
+         </children></Pane>
+      <AnchorPane fx:id="tool" layoutY="228.0" prefHeight="25.0" prefWidth="165.0">
+         <children>
+            <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="16.0" layoutY="2.0" onMouseClicked="#clear" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../bin/icon/file.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="51.0" layoutY="2.0" onMouseClicked="#open" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../bin/icon/open.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="93.0" layoutY="2.0" onMouseClicked="#vrp" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../bin/icon/play.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="125.0" layoutY="2.0" onMouseClicked="#pause" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../bin/icon/pause.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+      <AnchorPane fx:id="in" layoutY="42.0" prefHeight="175.0" prefWidth="165.0">
+         <children>
+            <Button fx:id="file" layoutX="7.0" layoutY="10.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="148.0" style="-fx-background-color: #54BD94;" />
+            <Button fx:id="vehicle" layoutX="8.0" layoutY="51.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="148.0" style="-fx-background-color: #AACB94;" />
+            <Button fx:id="capacity" layoutX="8.0" layoutY="93.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="148.0" style="-fx-background-color: E7DB89;" />
+            <Button fx:id="client" layoutX="7.0" layoutY="134.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="148.0" style="-fx-background-color: FFA57C;" />
+         </children></AnchorPane>
+      <AnchorPane fx:id="out" layoutY="267.0" prefHeight="175.0" prefWidth="165.0">
+         <children>
+            <Button fx:id="generation" layoutX="8.0" layoutY="50.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="148.0" style="-fx-background-color: #FF9629;" />
+            <Button fx:id="resvih" layoutX="8.0" layoutY="92.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="148.0" style="-fx-background-color: #43D447;" />
+            <Button fx:id="population" layoutX="9.0" layoutY="9.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="148.0" style="-fx-background-color: #FF4254;" />
+         </children>
+      </AnchorPane>
+      <Button fx:id="resdis" layoutX="8.0" layoutY="401.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="148.0" style="-fx-background-color: #FA99F4;" />
+      <AnchorPane fx:id="solution" layoutY="446.0" prefHeight="32.0" prefWidth="633.0">
+         <children>
+            <Text fx:id="chemin" fill="RED" layoutX="17.0" layoutY="19.0" strokeMiterLimit="510.0" strokeType="OUTSIDE" strokeWidth="10.0" text="path" textAlignment="CENTER" wrappingWidth="599.6666259765625" />
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

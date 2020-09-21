@@ -1,0 +1,67 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.root{
+	-fx-background-color:transparent ;
+	-fx-border-color: transparent ;
+}
+
+Pane{
+	-fx-background-radius: 20;
+	-fx-background-color: rgba(0,0,0,0.8);
+	-fx-border-color: red;
+	-fx-border-radius: 20;
+}
+
+#solution{
+	-fx-background-color: rgba(0,0,0,0.8);
+}
+AnchorPane{
+	-fx-background-radius: 20;
+	-fx-background-color: rgba(0,0,0,0.5);
+	-fx-border-color:red ;
+	-fx-border-radius: 20;
+}
+
+Text{
+	-fx-font-size: 20;
+	-fx-font-family: "Monospace";
+}
+
+#clock{
+	-fx-font-size: 12;
+	-fx-font-family: "Monospace";
+}
+
+#chemin{
+	-fx-font-size: 12;
+	-fx-font-family: "Monospace";
+}
+
+Button{
+	-fx-background-radius: 20;
+	-fx-text-alignment: center ;
+	-fx-font-size: 14;
+	-fx-font-family: "Monospace";
+}
+
+Client{
+	-fx-stroke: red;
+}
+
+Depot{
+	-fx-stroke: blue ;
+	-fx-fill: red;
+	-fx-stroke-width: 0.3;
+}
+
+Line{
+	-fx-stroke-width: 0.2;
+}
+
+ProgressIndicator:indeterminate{
+	-fx-accent: red;
+}
+
+
+
+
+
